@@ -14,30 +14,32 @@ Adicione comentários explicando por que você escolheu cada tag semântica em p
   <body>
     <div id="page-container">
       <header id="top-section">
-        <a href="#" id="logo">Meu Site</a>
+        <h1 id="logo">Meu Site</h1>
         <nav id="navigation">
-          <li class="nav-item">Home</li>
-          <div class="nav-item">Sobre</div>
-          <div class="nav-item">Contato</div>
+          <ul>
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="#" class="nav-item">Sobre</a></li>
+            <li><a href="#" class="nav-item">Contato</a></li>
+          <ul>
         </nav>
       </header>
 
-      <div id="main-content">
-        <div id="left-column">
-          <div class="article">
-            <div class="title">Artigo 1</div>
-            <div class="content">Este é o conteúdo do artigo 1.</div>
-          </div>
-        </div>
-        <div id="right-column">
-          <div class="sidebar-item">Item 1</div>
-          <div class="sidebar-item">Item 2</div>
-        </div>
-      </div>
+      <main id="main-content">
+        <section id="left-column">
+          <article class="article">
+            <h2 class="title">Artigo 1</h2>
+            <p class="content">Este é o conteúdo do artigo 1.</p>
+          </article>
+        </section>
+        <aside id="right-column">
+          <p class="sidebar-item">Item 1</p>
+          <p class="sidebar-item">Item 2</p>
+        </aside>
+      </main>
 
-      <div id="bottom-section">
-        <div id="footer-text">Copyright 2023</div>
-      </div>
+      <footer id="bottom-section">
+        <p id="footer-text">Copyright 2023</p>
+      </footer>
     </div>
   </body>
 </html>
