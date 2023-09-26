@@ -1,0 +1,178 @@
+<form name="teste" action="/receber_form.html" method="post" id="teste-form">
+  <label for="id-nome">Nome</label>
+
+  <input
+    type="text"
+    id="id-nome"
+    name="nome"
+    placeholder="Insira seu nome aqui"
+    required
+    maxlength="10"
+  /><br />
+  <br />
+
+  <label for="id-email">E-mail</label>
+  <input
+    type="email"
+    id="id-email"
+    name="email"
+    placeholder="Insira seu email"
+  /><br /><br />
+
+  <label for="id-password">Senha</label>
+  <input
+    type="password"
+    id="id-password"
+    name="password"
+    placeholder="Insira sua senha"
+  /><br /><br />
+
+  <label for="id-search">Busca por CEP</label>
+  <input
+    type="search"
+    name="busca"
+    id="id-search"
+    placeholder="Busque seu CEP"
+  /><br /><br />
+
+  <label for="id-site">Site da sua empresa</label> <br />
+  <input
+    type="url"
+    name="url"
+    id="id-site"
+    placeholder="Insira o site da sua empresa"
+  />
+  <br /><br />
+
+  <label for="id-tel">Telefone</label>
+  <input
+    type="tel"
+    name="telefone"
+    id="id-tel"
+    placeholder="Insira seu telefone"
+  />
+  <br /><br />
+  <!--br*10 + enter coloca 10brs-->
+
+  <label for="id-date">Data</label>
+  <input
+    type="date"
+    name="data"
+    id="id-date"
+    placeholder="Insira a data de hoje"
+  />
+  <br /><br />
+
+  <label for="id-time">Horário</label>
+  <input
+    type="time"
+    name="hora"
+    id="id-time"
+    placeholder="Insira a hora"
+  /><br /><br />
+
+  <label for="id-dataHora">Data e hora</label>
+  <input
+    type="datetime-local"
+    name="dataHora"
+    id="id-dataHora"
+    placeholder="Insira a hora e data"
+  /><br /><br />
+
+  <label for="id-month">Mês</label>
+  <input
+    type="month"
+    name="mes"
+    id="id-month"
+    placeholder="Insira o mês"
+  /><br /><br />
+
+  <label for="id-wek">Semana</label>
+  <input
+    type="week"
+    name="semana"
+    id="id-wek"
+    placeholder="Insira a semana"
+  /><br /><br />
+
+  <label for="id-number">Número da casa</label>
+  <input
+    type="number"
+    name="numero-da-casa"
+    id="id-number"
+    placeholder="Insira o número"
+  /><br /><br />
+
+  <label for="id-range">Tom do claro para o escuro</label>
+  <input
+    type="range"
+    name="cor-da-casa"
+    id="id-range"
+    placeholder="Insira a cor"
+    min="5"
+    max="50"
+  /><br /><br />
+
+  <label for="amarelo">Amarelo</label>
+  <input type="radio" name="radio-cor" id="amarelo" value="amarelo" />
+
+  <label for="azul">Azul</label>
+  <input type="radio" checked name="radio-cor" id="azul" value="" />
+
+  <label for="preto">Preto</label>
+  <input type="radio" name="radio-cor" id="preto" value="preto" /><br /><br />
+
+  <label for="amarelo">Amarelo</label>
+  <input type="checkbox" name="radio-cor" id="amarelo" value="amarelo" />
+
+  <label for="azul">Azul</label>
+  <input type="checkbox" checked name="radio-cor" id="azul" value="" />
+
+  <label for="preto">Preto</label>
+  <input
+    type="checkbox"
+    name="radio-cor"
+    id="preto"
+    value="preto"
+  /><br /><br />
+
+  <input
+    type="button"
+    name="button"
+    id="id-button"
+    value="Cancelar"
+  /><br /><br />
+
+  <input
+    type="submit"
+    name="button"
+    id="id-button-cancelar"
+    value="Salvar"
+  /><br /><br />
+
+  <input
+    type="reset"
+    name="button"
+    id="id-button-reset"
+    value="Limpar formulário"
+  /><br /><br />
+
+  <input type="file" name="button-file" id="id-button-file" /><br /><br />
+
+  <label for="id-testarea">Observaçoes</label>
+  <textarea
+    type="texrarea"
+    name="texrarea"
+    id="id-textarea"
+    cols="29"
+    rowns="5"
+  ></textarea>
+  <br /><br />
+
+  <label for="id-estados">Estados</label>
+  <select name="estados" id="id-estados">
+    <option value="SP">São Paulo</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="MG">Minas Gerais</option>
+  </select>
+</form>
