@@ -1,33 +1,26 @@
-section{
+section {
+  width: 100%;
+  background-color: rgb(81, 74, 172);
+  height: 300px;
 
-    width:100%;
-    background-color: rgb(81, 74, 172);
-    height: 300px;
+  display: flex;
+  /*justify-content: flex-start;*/
+  justify-content: center;
+  flex-wrap: wrap;
 
-    display: flex;
-    /*justify-content: flex-start;*/
-    justify-content: center;
-    flex-wrap: wrap;
-
-
-    gap: 10px 10px;
-    align-items: stretch;
-    
+  gap: 10px 10px;
+  align-items: stretch;
 }
-article{
-    
-    background-color: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    border-radius: 100%;
-    /*padding-top: 10%;*/
+article {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 100%;
+  /*padding-top: 10%;*/
 
-    /*width: 100px;
+  /*width: 100px;
     height: 100px;
     background-color: red;
     margin: 50px;*/
-        
-
-   
 }
