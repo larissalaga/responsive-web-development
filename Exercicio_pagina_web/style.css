@@ -1,47 +1,49 @@
+/* Reset de estilos para limpar estilos padrão do navegador */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 700px;
 }
+
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para a navegação */
 nav ul {
   display: flex;
-  padding: 20px 20px;
+  padding: 20px;
   flex-direction: row;
-  align-content: center;
   justify-content: flex-end;
   list-style: none;
   gap: 25px;
 }
+
 a {
   color: black;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-img {
-  width: 180px;
-  height: 180px;
-}
+
+/* Estilos para a seção "estudante" */
 .estudante {
   display: flex;
-  padding: 80px 60px;
-  justify-content: space-between;
-  gap: 80px;
-}
-.estudante section {
-  display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 25px;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
+
+.estudante section {
+  text-align: center;
+}
+
 .titulo_nome {
   font-weight: bold;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
 }
+
 .estudante button {
   background-color: #ff6464;
   width: 150px;
@@ -51,78 +53,75 @@ img {
   border-radius: 2px;
   cursor: pointer;
 }
-.noticias {
-  background-color: lightcyan;
+
+/* Estilos para as seções de notícias e trabalhos */
+.noticias,
+.trabalhos {
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px 60px;
+  padding: 20px;
 }
-.noticias section {
+
+.noticias section,
+.trabalhos section {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.artigo {
+
+.artigo,
+.trabalho {
   background-color: white;
-  padding: 20px 20px 20px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  padding: 20px;
+  flex: 1;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
+
 .atualizacao {
   display: flex;
   justify-content: space-between;
   font-weight: lighter;
 }
+
 .data {
   border-right: 1px solid black;
   width: 50%;
 }
-.trabalhos {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px 60px;
-}
+
 .trabalho {
   display: flex;
-  flex-direction: row;
-  gap: 15px;
-  border-bottom: 1px solid lightgray;
-  padding: 20px 0px 10px 0px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
 .titulo_trabalho {
   font-weight: bolder;
   font-size: x-large;
+  margin-bottom: 10px;
 }
+
 .img2 {
   width: 150px;
   height: 110px;
-  display: flex;
 }
-.trabalhos section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+
 .trabalho p {
   font-size: small;
 }
+
 .trabalhos h4 {
   font-weight: lighter;
 }
+
 .ano_categoria {
   display: flex;
-  justify-content: flex-start;
   gap: 20px;
   font-weight: lighter;
 }
+
 .ano {
   background-color: #142850;
-
   color: white;
   display: flex;
   justify-content: center;
@@ -131,13 +130,89 @@ img {
   font-size: small;
   align-items: center;
 }
+
 .img_footer {
   width: 25px;
   height: 25px;
 }
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tamanhos de tela menores que 480px */
+@media screen and (max-width: 480px) {
+  .estudante {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .titulo_nome {
+    font-size: 20px;
+  }
+
+  .estudante button {
+    width: 100%;
+  }
+
+  .noticias,
+  .trabalhos {
+    padding: 10px;
+  }
+
+  .artigo,
+  .trabalho {
+    padding: 15px;
+  }
+}
+
+/* Tamanhos de tela entre 481px e 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav ul {
+    gap: 15px;
+  }
+}
+
+/* Tamanhos de tela entre 769px e 1279px */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .estudante {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .noticias,
+  .trabalhos {
+    padding: 20px;
+  }
+
+  .artigo,
+  .trabalho {
+    padding: 20px;
+  }
+}
+
+/* Tamanhos de tela maiores que 1279px */
+@media screen and (min-width: 1280px) {
+  .estudante {
+    padding: 80px 60px;
+    gap: 80px;
+  }
+
+  .noticias,
+  .trabalhos {
+    padding: 20px 60px;
+  }
+
+  .artigo,
+  .trabalho {
+    padding: 20px;
+  }
 }
